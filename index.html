@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AILIN TEA PRACTICE · китайский чай с личным отбором в Китае</title>
+<meta name="description" content="Алина Шарипова, специалист по китайскому чаю с профильным образованием в Китае. Подбор китайского чая под вкус и задачу: зелёный, красный Цимэнь, улун, пуэр. Консультации, поставки, дегустации.">
+<meta name="keywords" content="китайский чай, подбор китайского чая, китайский чай оптом, поставки чая из Китая, чайный эксперт в Китае, чайная наука, чай из Аньхоя, красный чай Цимэнь, Хуаншань Маофэн, Тайпин Хоукуй, Великий чайный путь, Россия Китай чай">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AILIN TEA PRACTICE · китайский чай с личным отбором в Китае">
+<meta property="og:description" content="Специалист по китайскому чаю с профильным образованием в Китае. Помогаю подобрать чай под вкус, задачу и формат.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta property="og:locale" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/favicon_ailin_seal.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&family=Noto+Serif+SC:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!--
+  i18n-готовность: весь видимый текст помечен атрибутом data-i18n="ключ"
+  (для placeholder — data-i18n-ph). Русский текст остаётся в разметке
+  (важно для SEO и работы без JS), а полный словарь строк вынесен в i18n.js.
+  Чтобы добавить английскую версию: заполнить I18N.en в i18n.js и вызвать
+  applyI18n('en') (например, из переключателя языка). См. README.
+-->
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo" aria-label="AILIN TEA PRACTICE, на главную">
+      <!-- печать-логотип: инлайн SVG (тёмная версия для светлой шапки), шрифты совпадают со страницей;
+           viewBox обрезан по краям знака, чтобы логотип в шапке был крупным без пустых полей -->
+      <svg class="logo-svg header-logo" viewBox="40 50 556 140" role="img" aria-label="AILIN TEA PRACTICE">
+        <rect x="48" y="58" width="124" height="124" rx="16" fill="#16301F"/>
+        <text x="110" y="108" text-anchor="middle" class="cjk" font-size="46" fill="#F4ECDD">爱</text>
+        <text x="110" y="160" text-anchor="middle" class="cjk" font-size="46" fill="#F4ECDD">林</text>
+        <text x="439" y="116" text-anchor="middle" class="serif" font-size="80" letter-spacing="2" fill="#16301F">Ailin</text>
+        <text x="444" y="156" text-anchor="middle" class="sans" font-size="19" letter-spacing="12" fill="#16301F">TEA PRACTICE</text>
+      </svg>
+    </a>
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#about" data-i18n="nav.about">Обо мне</a>
+      <a href="#expertise" data-i18n="nav.expertise">Экспертиза</a>
+      <a href="#tea" data-i18n="nav.tea">Чай</a>
+      <a href="#services" data-i18n="nav.services">Услуги</a>
+      <a href="#media" data-i18n="nav.media">Медиа</a>
+      <a href="#contacts" data-i18n="nav.contacts">Контакты</a>
+      <a class="btn btn-primary nav-cta" href="https://t.me/a_linshar" target="_blank" rel="noopener" data-i18n="nav.cta">Запросить консультацию</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg">
+    <img src="media/photo_hero.jpg" alt="Китайский чай на чайном столе, личный отбор в Китае" fetchpriority="high">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <h1 data-i18n="hero.h1">Китайский чай с личным отбором в Китае</h1>
+    <p class="hero-sub" data-i18n="hero.sub">Я Алина Шарипова, специалист по китайскому чаю. Профильное образование получила в Китае, здесь же живу и работаю в чайной среде Восточного Китая. Знаю чай от производства до дегустации и помогаю подобрать его под ваш вкус, задачу и формат.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="#contacts" data-i18n="hero.btnSelect">Подобрать чай</a>
+      <a class="btn btn-ghost" href="#services" data-i18n="hero.btnPartners">Для магазинов и партнёров</a>
+      <a class="btn btn-link" href="#media" data-i18n="hero.btnMedia">Смотреть медиа →</a>
+    </div>
+    <ul class="hero-markers">
+      <li data-i18n="hero.m1">Профильное образование по чаеведению в Китае</li>
+      <li data-i18n="hero.m2">Практика в чайных регионах Китая</li>
+      <li data-i18n="hero.m3">Сенсорная оценка, производство, дегустации</li>
+      <li data-i18n="hero.m4">Русский, китайский и международный контекст</li>
+    </ul>
+  </div>
+</section>
+
+<main>
+
+<!-- ============ ABOUT ============ -->
+<section class="section" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="about.eyebrow">Обо мне</span>
+      <h2 data-i18n="about.h2">Мой путь в чае</h2>
+    </div>
+    <div class="split">
+      <div class="split-text reveal">
+        <p data-i18n="about.p1">Меня зовут Алина, а по-китайски - Ailin (爱林). Я родом из Уфы. Китайский чай впервые попробовала в 2011 году и тогда увидела в нём просто интересный напиток и часть китайской культуры. Со временем чай стал отдельным направлением и в жизни, и в учёбе, и в работе.</p>
+        <p data-i18n="about.p2">По первому образованию я историк: в Башкирском государственном университете занималась древней историей Китая. В 2019 году получила стипендию правительства КНР и приехала в Китай, в Аньхойский сельскохозяйственный университет в городе Хэфэй. Там, на факультете чайной науки, я стала изучать чай профессионально.</p>
+        <p data-i18n="about.p3">Для меня чай значит больше, чем напиток или товар: в нём сходятся земля, вкус, ремесло, язык и связи между людьми. Сейчас я помогаю другим лучше понимать китайский чай и знать, что именно они выбирают.</p>
+      </div>
+      <div class="about-photos reveal">
+        <img src="media/about_portrait_china.jpg" alt="Алина Шарипова в китайской чайной среде" loading="lazy" decoding="async" class="ph tall">
+        <img src="media/about_tea_table.jpg" alt="За чайным столом в Китае" loading="lazy" decoding="async" class="ph">
+        <img src="media/about_china_student.jpg" alt="Студенческий период в Китае" loading="lazy" decoding="async" class="ph">
+        <img src="media/about_university.jpg" alt="Аньхойский сельскохозяйственный университет" loading="lazy" decoding="async" class="ph">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section alt" id="education">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="education.eyebrow">Образование</span>
+      <h2 data-i18n="education.h2">Профильное образование и чайная практика</h2>
+    </div>
+    <div class="split reverse">
+      <div class="split-text reveal">
+        <p data-i18n="education.p1">Аньхойский сельскохозяйственный университет входит в число ведущих центров изучения чайной науки в Китае. Я закончила магистратуру по специальности «Чайная наука», направление «Сенсорная оценка и контроль качества чая». Сенсорную оценку чая изучала и в теории, и на практике. В программе, помимо непосредственно теории и практики профессиональной оценки, были технология производства, биохимия чайного растения, влияние чая на здоровье, культура китайского чая и другие курсы. Мой дипломный эксперимент был посвящен оценке определенного вида красного чая разными категориями потребителей.</p>
+        <p data-i18n="education.p2">В лаборатории в экспериментах и на практических занятиях моим основным направлением была профессиональная оценка и контроль качества чая, что в реальности включает в себя большой круг методов - от химических до сенсорных. Но одной аудитории, как водится, было мало: знание чая в полной мере может раскрыться там, где его делают, рядом с людьми, которые его выращивают и обрабатывают.</p>
+        <div class="docs">
+          <span class="docs-label" data-i18n="education.docsLabel">Документы и подтверждения</span>
+          <div class="docs-row">
+            <img src="media/education_diploma_master.jpg" alt="Диплом магистра чайной науки" loading="lazy" class="doc-thumb zoomable" tabindex="0" role="button" data-full="media/education_diploma_master.jpg" data-caption="Диплом магистра чайной науки">
+          </div>
+        </div>
+      </div>
+      <div class="edu-photos reveal">
+        <img src="media/education_university_photo.jpg" alt="Кампус Аньхойского сельскохозяйственного университета" loading="lazy" decoding="async" class="ph">
+        <img src="media/education_lab_photo.jpg" alt="Дегустационная лаборатория чая" loading="lazy" decoding="async" class="ph">
+        <img src="media/education_defense_photo.jpg" alt="Защита магистерской работы" loading="lazy" decoding="async" class="ph">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRACTICE ============ -->
+<section class="section" id="practice">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="practice.eyebrow">Практика в чайных регионах</span>
+      <h2 data-i18n="practice.h2">Изучение чая не ограничивается теорией</h2>
+    </div>
+    <div class="split reveal">
+      <div class="split-text">
+        <p data-i18n="practice.p1">Во время учёбы в Китае я начала ездить по чайным районам Аньхоя, а затем и в такие чаепроизводящие регионы, как Чжэцзян, Фуцзянь, Гуандун и другие. Спустя годы в Китае самым исследованным мной чайным регионом остается провинция Аньхой, в которой производится более 100 разновидностей чая, из которых 44 имеют подтвержденное географическое происхождение. Я регулярно продолжаю наблюдать выращивание чая, каждый сезон участвую в сборе, ручной и машинной обработке сырья, наблюдаю работу мастеров и учусь у них.</p>
+        <p data-i18n="practice.p2">Мне важно видеть за готовым чаем место и землю, сорт растения, сезон и, конечно, труд людей на каждом этапе обработки чайного листа.</p>
+      </div>
+      <div class="grid-photos g3">
+        <img src="media/region_huangshan_1.jpg" alt="Чайные горы Хуаншань" loading="lazy" class="ph">
+        <img src="media/region_qimen_1.jpg" alt="Уезд Цимэнь, родина красного чая с одноименным названием" loading="lazy" class="ph">
+        <img src="media/region_tea_field_1.jpg" alt="Чайное поле в Аньхое" loading="lazy" class="ph">
+        <img src="media/region_hand_roasting.jpg" alt="Ручная обработка чайного листа" loading="lazy" class="ph">
+        <img src="media/region_with_farmers.jpg" alt="С производителями чая" loading="lazy" class="ph">
+        <img src="media/region_tea_factory.jpg" alt="Чайное производство" loading="lazy" class="ph">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SENSORY ============ -->
+<section class="section alt" id="sensory">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="sensory.eyebrow">Сенсорная оценка</span>
+      <h2 data-i18n="sensory.h2">Как я оцениваю чай</h2>
+    </div>
+    <div class="split reverse reveal">
+      <div class="split-text">
+        <p data-i18n="sensory.p1">Моя работа держится на сенсорной оценке чая. Я смотрю на сухой лист, цвет настоя, аромат, вкус и лист после заваривания. Так проще выбирать чай не только и не столько по красивым легендам, сколько по его реальным характеристикам.</p>
+        <p data-i18n="sensory.p2">Я умею объяснять вкусо-ароматические характеристики: что такое цветы, фрукты, мёд, дерево и другие ноты, почему они присутствуют в чае, почему один чай звучит легче, а другой плотнее. И, конечно, могу сориентировать в выборе вида и сорта чая под вкус и задачу.</p>
+      </div>
+      <div class="grid-photos g3">
+        <img src="media/sensory_gaiwan_1.jpg" alt="Гайвань и настой чая" loading="lazy" class="ph">
+        <img src="media/sensory_tea_liquor_1.jpg" alt="Цвет чайного настоя" loading="lazy" class="ph">
+        <img src="media/sensory_dry_leaf_1.jpg" alt="Сухой чайный лист" loading="lazy" class="ph">
+        <img src="media/sensory_wet_leaf_1.jpg" alt="Раскрытый чайный лист после заваривания" loading="lazy" class="ph">
+        <img src="media/sensory_notes_1.jpg" alt="Дегустационные записи" loading="lazy" class="ph">
+      </div>
+    </div>
+    <!-- пять факторов оценки в порядке стандарта GB/T 23776-2018 «Методика сенсорной оценки чая»
+         (外形 → 汤色 → 香气 → 滋味 → 叶底); показатели внутри фактора — по его п. 5.2.2 -->
+    <div class="factors-wrap reveal">
+      <span class="docs-label" data-i18n="sensory.factorsLabel">Пять факторов сенсорной оценки<span class="factors-std">китайский стандарт GB/T 23776-2018</span></span>
+      <ol class="factors">
+        <li><span class="f-zh" lang="zh-CN">外形</span><h3 data-i18n="sensory.f1h">Внешний вид сухого&nbsp;чая</h3><p data-i18n="sensory.f1p">Форма, нежность сырья, цвет и блеск, целостность, чистота.</p></li>
+        <li><span class="f-zh" lang="zh-CN">汤色</span><h3 data-i18n="sensory.f2h">Цвет настоя</h3><p data-i18n="sensory.f2p">Оттенок и его насыщенность, яркость, прозрачность.</p></li>
+        <li><span class="f-zh" lang="zh-CN">香气</span><h3 data-i18n="sensory.f3h">Аромат</h3><p data-i18n="sensory.f3p">Тип, интенсивность, чистота, стойкость.</p></li>
+        <li><span class="f-zh" lang="zh-CN">滋味</span><h3 data-i18n="sensory.f4h">Вкус</h3><p data-i18n="sensory.f4p">Насыщенность, плотность, мягкость или терпкость, чистота, свежесть.</p></li>
+        <li><span class="f-zh" lang="zh-CN">叶底</span><h3 data-i18n="sensory.f5h">Чайное дно</h3><p data-i18n="sensory.f5p">Лист после заваривания: нежность, цвет, яркость, однородность.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERTISE ============ -->
+<section class="section" id="expertise">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="expertise.eyebrow">Экспертиза</span>
+      <h2 data-i18n="expertise.h2">Что стоит за моими советами</h2>
+    </div>
+    <!-- вертикальное фото целиком (3:4, без обрезки) слева + шесть карточек справа -->
+    <div class="expertise-layout">
+      <div class="expertise-photo reveal">
+        <img src="media/expertise_ganzhi_zhongguo_2025.jpg" alt="Алина Шарипова у баннера проекта «感知中国 / Perception of China» в роли посла-распространителя, с сертификатом" loading="lazy" width="1080" height="1440">
+      </div>
+    <div class="cards c2 reveal">
+      <article class="card"><h3 data-i18n="expertise.c1h">Профильное образование в Китае</h3><p data-i18n="expertise.c1p">Магистратура по чайной науке в Аньхойском сельскохозяйственном университете.</p></article>
+      <article class="card"><h3 data-i18n="expertise.c2h">Историческая база</h3><p data-i18n="expertise.c2p">Первое образование историческое. Отдельно интересуюсь темами на стыке дисциплин: Великим чайным путём и культурными связями России и Китая.</p></article>
+      <article class="card"><h3 data-i18n="expertise.c3h">Практика в чайных регионах</h3><p data-i18n="expertise.c3p">Поездки по чайным провинциям Китая, стажировки на производстве разных видов чая.</p></article>
+      <article class="card"><h3 data-i18n="expertise.c4h">Сенсорная оценка</h3><p data-i18n="expertise.c4p">Профессиональная оценка чая и контроль качества.</p></article>
+      <article class="card"><h3 data-i18n="expertise.c5h">Культурная коммуникация</h3><p data-i18n="expertise.c5p">Рассказываю о китайском чае русскоязычной и международной аудитории.</p></article>
+      <article class="card"><h3 data-i18n="expertise.c6h">Медиа и публичные выступления</h3><p data-i18n="expertise.c6p">Интервью, выставки, социальные проекты, культурные и научные мероприятия о чае.</p></article>
+    </div>
+    </div>
+    <div class="awards reveal">
+      <span class="docs-label" data-i18n="expertise.awardsLabel">Награды и документы</span>
+      <div class="awards-row">
+        <!-- подпись награды: название (основная строка) + организация, выдавшая документ (вторичная строка) -->
+        <figure><img src="media/award_china_huitea_ambassador_2024.jpg" alt="Международный посол чая провинции Аньхой, 2024" loading="lazy" class="doc-thumb zoomable" tabindex="0" role="button" data-full="media/award_china_huitea_ambassador_2024.jpg" data-caption="Международный посол чая провинции Аньхой · 2024 · 中国徽茶公益推广大使"><figcaption><span class="aw-title" data-i18n="expertise.a1">Международный посол чая провинции Аньхой · 2024</span><span class="aw-org" data-i18n="expertise.a1org">Ассоциация чайной индустрии провинции Аньхой · Ассоциация экологически чистых продуктов питания провинции Аньхой</span></figcaption></figure>
+        <figure><img src="media/award_belt_and_road_ambassador.jpg" alt="Посол «Пояса и пути», 2025" loading="lazy" class="doc-thumb zoomable" tabindex="0" role="button" data-full="media/award_belt_and_road_ambassador.jpg" data-caption="Посол «Пояса и пути» · 2025 · 一带一路合作交流大使"><figcaption><span class="aw-title" data-i18n="expertise.a2">Посол «Пояса и пути» · 2025</span><span class="aw-org" data-i18n="expertise.a2org">Ассоциация учёных и предпринимателей провинции Аньхой</span></figcaption></figure>
+        <figure><img src="media/award_international_youth_tea_culture.jpg" alt="Международный чайный посол молодёжи, 2025" loading="lazy" class="doc-thumb zoomable" tabindex="0" role="button" data-full="media/award_international_youth_tea_culture.jpg" data-caption="Международный чайный посол молодёжи · 2025 · 国际青年茶文化传播大使"><figcaption><span class="aw-title" data-i18n="expertise.a3">Международный чайный посол молодёжи · 2025</span><span class="aw-org" data-i18n="expertise.a3org">Шанхайское общество чайной науки</span></figcaption></figure>
+        <figure><img src="media/award_ganzhi_zhongguo_2025.jpg" alt="Лауреат «Познавая Китай · Человек года 2025», номинация «Посол по популяризации Китая»" loading="lazy" class="doc-thumb zoomable" tabindex="0" role="button" data-full="media/award_ganzhi_zhongguo_2025.jpg" data-caption="Лауреат «Познавая Китай · Человек года 2025», номинация «Посол по популяризации Китая» · 感知中国"><figcaption><span class="aw-title" data-i18n="expertise.a4">Лауреат «Познавая Китай · Человек года 2025», номинация «Посол по популяризации Китая»</span><span class="aw-org" data-i18n="expertise.a4org">Китайский стипендиальный совет (China Scholarship Council, CSC)</span></figcaption></figure>
+        <figure><img src="media/certificate_professional_1.jpg" alt="Диплом III степени на Международном форуме по науке о вкусе пищевых продуктов и инновационным технологиям в г. Ухань" loading="lazy" class="doc-thumb zoomable" tabindex="0" role="button" data-full="media/certificate_professional_1.jpg" data-caption="Диплом III степени на Международном форуме по науке о вкусе пищевых продуктов и инновационным технологиям в г. Ухань"><figcaption><span class="aw-title" data-i18n="expertise.a5">Диплом III степени на Международном форуме по науке о вкусе пищевых продуктов и инновационным технологиям в г. Ухань</span><span class="aw-org" data-i18n="expertise.a5org">FFPSI — оргкомитет Международного форума по науке о вкусе пищевых продуктов и инновационным технологиям</span></figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MEDIA ============ -->
+<section class="section alt" id="media">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="media.eyebrow">Медиа</span>
+      <h2 data-i18n="media.h2">Моя история в китайских медиа</h2>
+    </div>
+    <div class="media-intro reveal">
+      <p data-i18n="media.p1">Со студенческих лет моя история о чае и жизни в Китае не раз появлялась в китайских медиа, в том числе в Xinhua News, Xinhua Global Link и China News Service. Публичность сама по себе мне не столь интересна; скорее, я вижу её как часть более широкой темы - культурного обмена между Россией и Китаем через чай.</p>
+      <p data-i18n="media.p2">Я рассказываю о китайском чае, об учёбе в Китае и о чайной культуре Аньхоя, а также о том, как пришла к занятию чаем профессионально.</p>
+    </div>
+    <div class="videos reveal">
+      <!-- видео + короткая поясняющая подпись под ним (вторична по отношению к ролику) -->
+      <figure class="video-item">
+        <div class="video-embed"><video controls preload="none" playsinline poster="assets/video_poster_2.jpg" title="Видео 1"><source src="media/media_video_2.mp4" type="video/mp4"></video></div>
+        <figcaption class="video-caption" data-i18n="media.v1cap">Репортаж с чайного производства компании «Жуньсы» в Чичжоу, провинция Аньхой, где я рассказываю о своей работе: исследованиях и разработке продуктов для российского рынка, сенсорной оценке чая, изучении производства и купажирования. В сюжете также показаны исторические материалы компании, связанные с поставками аньхойского чёрного чая в СССР и Россию. Символично, что сегодня моя работа по развитию российского направления продолжается именно здесь — в одной из исторических точек этого чайного маршрута.</figcaption>
+      </figure>
+      <figure class="video-item">
+        <div class="video-embed"><video controls preload="none" playsinline poster="assets/video_poster_3.jpg" title="Видео 2"><source src="media/media_video_3.mp4" type="video/mp4"></video></div>
+        <figcaption class="video-caption" data-i18n="media.v2cap">Репортаж 2024 года из деревни Хоукэн в округе Хуаншань — родины знаменитого зелёного чая Тайпин Хоукуй. Здесь я беседую с потомственным чайным мастером с более чем сорокалетним опытом: он рассказывает об особенностях этого чая, традициях его производства и показывает правильный способ заваривания. В то время я ещё была студенткой и уже говорила о своём желании связать профессиональное будущее с китайским чаем и помогать знакомить с ним людей за пределами Китая.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CULTURE ============ -->
+<section class="section" id="culture">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="culture.eyebrow">Культурный мост</span>
+      <h2 data-i18n="culture.h2">Чай как связь между культурами</h2>
+    </div>
+    <div class="split reveal">
+      <div class="split-text">
+        <p data-i18n="culture.p1">К китайскому чаю я пришла через интерес к культуре, истории и телесным практикам Китая. Чай стал способом узнавать страну вживую: через вкус, ремесло, людей и повседневность.</p>
+        <p data-i18n="culture.p2">Особенно важен для меня Великий чайный путь, историческая связь между Китаем и Россией. Сегодня я смотрю на эту тему по-новому: чай может быть общим языком, на котором культуры общаются, сотрудничают и интересуются друг другом.</p>
+      </div>
+      <div class="grid-photos g2">
+        <img src="media/culture_tea_road_map.jpg" alt="Карта Великого чайного пути" loading="lazy" class="ph">
+        <img src="media/culture_tea_ceremony_1.jpg" alt="Китайская чайная церемония" loading="lazy" class="ph">
+        <img src="media/culture_russia_china_1.jpg" alt="Культурная связь России и Китая через чай" loading="lazy" class="ph wide">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WHY ============ -->
+<section class="section alt" id="why">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="why.eyebrow">Почему я</span>
+      <h2 data-i18n="why.h2">Проводник в китайском чае</h2>
+    </div>
+    <div class="cards c3 reveal">
+      <article class="card"><h3 data-i18n="why.c1h">Я живу в Китае</h3><p data-i18n="why.c1p">Рядом со мной производители, чайный рынок и реальные чайные практики на их родине.</p></article>
+      <article class="card"><h3 data-i18n="why.c2h">Я знаю язык и контекст</h3><p data-i18n="why.c2p">Могу работать с китайскими источниками, общаться с китайской стороной и понимать то, что может теряться в переводе.</p></article>
+      <article class="card"><h3 data-i18n="why.c3h">У меня профильная научная база</h3><p data-i18n="why.c3p">Чай из увлечения превратился в предмет, который я изучаю системно.</p></article>
+      <article class="card"><h3 data-i18n="why.c4h">Я понимаю русскоязычного клиента</h3><p data-i18n="why.c4p">Знаю, какие вопросы бывают у людей из России и русскоязычной среды, и умею говорить о китайском чае ясно и по существу.</p></article>
+      <article class="card"><h3 data-i18n="why.c5h">Я подбираю под задачу</h3><p data-i18n="why.c5p">Чай для себя, для подарка и для магазина подбирается по-разному. Свои решения нужны клубу, ресторану, дегустации и оптовой закупке.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEA TYPES ============ -->
+<section class="section" id="tea">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="tea.eyebrow">Чай</span>
+      <h2 data-i18n="tea.h2">С какими видами чая я работаю</h2>
+    </div>
+    <div class="tea-grid reveal">
+      <article class="tea-card"><div class="tea-img"><img src="media/tea_green.jpg" alt="Китайский зелёный чай" loading="lazy"></div><div class="tea-body"><h3 data-i18n="tea.greenH">Зелёный чай</h3><p class="notes" data-i18n="tea.greenN">Свежесть, травянистость, цветочные и ореховые оттенки.</p></div></article>
+      <article class="tea-card"><div class="tea-img"><img src="media/tea_red.jpg" alt="Китайский красный чай" loading="lazy"></div><div class="tea-body"><h3 data-i18n="tea.redH">Красный чай</h3><p class="notes" data-i18n="tea.redN">Плотный и сладкий, с фруктовыми, медовыми, цветочными, иногда пряными оттенками.</p></div></article>
+      <article class="tea-card"><div class="tea-img"><img src="media/tea_white.jpg" alt="Китайский белый чай" loading="lazy"></div><div class="tea-body"><h3 data-i18n="tea.whiteH">Белый чай</h3><p class="notes" data-i18n="tea.whiteN">Мягкий, лёгкий, спокойный по характеру. Ноты сухофруктов, мёда, сухих трав.</p></div></article>
+      <article class="tea-card"><div class="tea-img"><img src="media/tea_yellow.jpg" alt="Китайский жёлтый чай" loading="lazy"></div><div class="tea-body"><h3 data-i18n="tea.yellowH">Жёлтый чай</h3><p class="notes" data-i18n="tea.yellowN">Редкая категория. Мягкий вкус с деликатной сладостью, а свежесть не такая резкая, как у зелёного.</p></div></article>
+      <article class="tea-card"><div class="tea-img"><img src="media/tea_oolong.jpg" alt="Китайский улун" loading="lazy"></div><div class="tea-body"><h3 data-i18n="tea.oolongH">Улун</h3><p class="notes" data-i18n="tea.oolongN">Большой диапазон вкусов: от цветочных и лёгких до жареных, минеральных и плотных.</p></div></article>
+      <article class="tea-card"><div class="tea-img"><img src="media/tea_puer.jpg" alt="Пуэр и тёмные чаи" loading="lazy"></div><div class="tea-body"><h3 data-i18n="tea.puerH">Пуэр и тёмные чаи</h3><p class="notes" data-i18n="tea.puerN">Землистые, древесные, сухофруктовые оттенки. Бывают выдержанные, мягкие и более плотные.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ANHUI ============ -->
+<section class="section alt" id="anhui">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="anhui.eyebrow">Аньхой</span>
+      <h2 data-i18n="anhui.h2">Моя чайная точка опоры в Китае</h2>
+    </div>
+    <div class="split reverse reveal">
+      <div class="split-text">
+        <p data-i18n="anhui.p1">В Аньхое, одном из ключевых чайных регионов Китая, делают знаменитые чаи: Хуаншань Маофэн, Тайпин Хоукуй, Люань Гуапянь, Цимэнь и другие. Здесь я училась и живу, езжу по чайным районам. Здесь до сих пор складывается мой профессиональный взгляд на китайский чай.</p>
+        <p data-i18n="anhui.p2">Отдельное место занимает красный чай Цимэнь, который в том числе производят на одном из старейших чайных заводов Китая в городе Чичжоу (池州). В описаниях его аромата часто встречаются цветочные, фруктовые и медовые ноты, а также мягкие пряности — на этом примере легко показать, что китайский красный чай — это не просто «чёрный чай» и разбираться в нём можно долго.</p>
+      </div>
+      <div class="grid-photos g2">
+        <img src="media/anhui_huangshan.jpg" alt="Хуаншань, Аньхой" loading="lazy" class="ph">
+        <img src="media/anhui_qimen.jpg" alt="Цимэнь, Аньхой" loading="lazy" class="ph">
+        <img src="media/anhui_qimen_black_tea_factory.jpg" alt="Завод цимэньского красного чая" loading="lazy" class="ph">
+        <img src="media/anhui_tea_mountains.jpg" alt="Чайные горы Аньхоя" loading="lazy" class="ph">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELECTION ============ -->
+<section class="section" id="selection">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="selection.eyebrow">Подбор</span>
+      <h2 data-i18n="selection.h2">Подбор китайского чая под ваш вкус и задачу</h2>
+    </div>
+    <div class="selection reveal">
+      <p class="lead" data-i18n="selection.lead">Я подбираю китайский чай под конкретный запрос. Учитываю вкус, бюджет, формат, объём и цель, а ещё то, насколько вы знакомы с чаем и какой сейчас сезон.</p>
+      <span class="docs-label" data-i18n="selection.whoLabel">Кому полезно:</span>
+      <ul class="who">
+        <li data-i18n="selection.w1">частным ценителям</li>
+        <li data-i18n="selection.w2">тем, кто хочет собрать домашнюю чайную полку</li>
+        <li data-i18n="selection.w3">чайным клубам</li>
+        <li data-i18n="selection.w4">магазинам</li>
+        <li data-i18n="selection.w5">ресторанам и кафе</li>
+        <li data-i18n="selection.w6">тем, кто ищет подарочные наборы</li>
+        <li data-i18n="selection.w7">тем, кто хочет попробовать чай из конкретного региона</li>
+        <li data-i18n="selection.w8">тем, кто планирует оптовую закупку</li>
+      </ul>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="https://t.me/a_linshar" target="_blank" rel="noopener" data-i18n="selection.btn1">Запросить подбор</a>
+        <a class="btn btn-outline" href="https://t.me/a_linshar" target="_blank" rel="noopener" data-i18n="selection.btn2">Получить актуальный прайс</a>
+        <a class="btn btn-outline" href="https://t.me/a_linshar" target="_blank" rel="noopener" data-i18n="selection.btn3">Обсудить сотрудничество</a>
+      </div>
+      <p class="note" data-i18n="selection.note">Ассортимент и цены зависят от сезона, партии, объёма и логистики. Что есть сейчас и сколько это стоит, лучше уточнить у меня напрямую.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="section alt" id="services">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="services.eyebrow">Услуги</span>
+      <h2 data-i18n="services.h2">Чем я могу быть полезна</h2>
+    </div>
+    <div class="cards c3 reveal">
+      <article class="card"><h3 data-i18n="services.c1h">Индивидуальный подбор чая</h3><p data-i18n="services.c1p">Под ваш вкус, бюджет, опыт и то, как вы собираетесь пить чай.</p></article>
+      <article class="card"><h3 data-i18n="services.c2h">Подбор для чайных клубов и магазинов</h3><p data-i18n="services.c2p">Ассортимент под аудиторию, ценовой сегмент и концепцию проекта.</p></article>
+      <article class="card"><h3 data-i18n="services.c3h">Партнёрские закупки и оптовые поставки</h3><p data-i18n="services.c3p">Помогаю подобрать партии, общаться с китайской стороной и подготовить и отправить закупку.</p></article>
+      <article class="card"><h3 data-i18n="services.c4h">Дегустации и обучение</h3><p data-i18n="services.c4p">Учу разбираться в китайском чае: понятно, но на профессиональном уровне.</p></article>
+      <article class="card"><h3 data-i18n="services.c5h">Консультации по китайскому чаю</h3><p data-i18n="services.c5p">Помогаю разобраться в ассортименте, позиционировании, категориях чая и в том, как устроен китайский чайный рынок.</p></article>
+      <article class="card"><h3 data-i18n="services.c6h">Культурные и медиапроекты</h3><p data-i18n="services.c6p">Участвую в интервью, лекциях, мероприятиях и проектах о китайском чае и культурном обмене.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="section" id="process">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="process.eyebrow">Как я работаю</span>
+      <h2 data-i18n="process.h2">Как проходит подбор</h2>
+    </div>
+    <ol class="timeline reveal">
+      <li><span class="step-n">1</span><div><h3 data-i18n="process.s1h">Вы оставляете заявку</h3><p data-i18n="process.s1p">Пишете, какой чай ищете и для какой задачи.</p></div></li>
+      <li><span class="step-n">2</span><div><h3 data-i18n="process.s2h">Я уточняю детали</h3><p data-i18n="process.s2p">Вкус, бюджет, объём, опыт, формат, сроки, страну доставки.</p></div></li>
+      <li><span class="step-n">3</span><div><h3 data-i18n="process.s3h">Подбираю варианты</h3><p data-i18n="process.s3p">Объясняю, чем чаи отличаются друг от друга, и помогаю сделать выбор со знанием дела.</p></div></li>
+      <li><span class="step-n">4</span><div><h3 data-i18n="process.s4h">Обсуждаем образцы</h3><p data-i18n="process.s4p">Если нужно, подбираем дегустационный набор или тестовые позиции.</p></div></li>
+      <li><span class="step-n">5</span><div><h3 data-i18n="process.s5h">Согласовываем заказ</h3><p data-i18n="process.s5p">Уточняем состав, объём, стоимость и дальнейшие шаги.</p></div></li>
+      <li><span class="step-n">6</span><div><h3 data-i18n="process.s6h">Организуем закупку, доставку или передачу</h3><p data-i18n="process.s6p">Всё зависит от формата сотрудничества.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ EVENTS ============ -->
+<section class="section alt" id="events">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="events.eyebrow">Мероприятия</span>
+      <h2 data-i18n="events.h2">Чайные мероприятия и встречи</h2>
+    </div>
+    <p class="section-lead reveal" data-i18n="events.lead">Я участвую в чайных и культурных событиях в Китае, представляю китайскую чайную культуру международной аудитории. Провожу чайные встречи, рассказывая о различных видах чая, а также провожу чайные церемонии по традиции, изученной у профессионалов чайного искусства.</p>
+    <div class="grid-photos g3 reveal">
+      <img src="media/event_taiping_houkui_2023.jpg" alt="Тайпин Хоукуй, 2023" loading="lazy" class="ph">
+      <img src="media/event_tea_festival_1.jpg" alt="Чайный фестиваль" loading="lazy" class="ph">
+      <img src="media/event_stage_1.jpg" alt="Выступление на сцене" loading="lazy" class="ph">
+      <img src="media/event_expo_1.jpg" alt="Чайная выставка" loading="lazy" class="ph">
+      <img src="media/event_expo_2.jpg" alt="Международная чайная выставка" loading="lazy" class="ph">
+      <img src="media/event_tea_ceremony_1.jpg" alt="Демонстрация чайной церемонии" loading="lazy" class="ph">
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACTS ============ -->
+<section class="section" id="contacts">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="contacts.eyebrow">Контакты</span>
+      <h2 data-i18n="contacts.h2">Связаться со мной</h2>
+    </div>
+    <div class="contacts reveal">
+      <div class="contacts-left">
+        <p data-i18n="contacts.intro">Напишите мне, если хотите подобрать китайский чай или обсудить поставку, консультацию, дегустацию либо медиапроект. Расскажите в двух словах, кто вы и какой формат сотрудничества ищете.</p>
+        <div class="channels">
+          <a class="channel tg" href="https://t.me/a_linshar" target="_blank" rel="noopener">
+            <span class="ch-name si si-tg" data-i18n="contacts.tgName">Telegram</span><span class="ch-id">@a_linshar</span>
+            <img src="media/qr_telegram.jpg" alt="QR-код Telegram @a_linshar" loading="lazy" class="qr zoomable" data-full="media/qr_telegram.jpg" data-caption="Telegram · @a_linshar">
+            <span class="ch-hint" data-i18n="contacts.tgHint">Нажмите или отсканируйте</span>
+          </a>
+          <div class="channel wc">
+            <span class="ch-name si si-wc" data-i18n="contacts.wcName">WeChat</span><span class="ch-id"><span data-i18n="contacts.wcIdLabel">WeChat ID:</span> a_linshar</span>
+            <img src="media/qr_wechat.png" alt="QR-код WeChat, WeChat ID: a_linshar" loading="lazy" class="qr zoomable" tabindex="0" role="button" data-full="media/qr_wechat.png" data-caption="WeChat ID: a_linshar">
+            <span class="ch-hint" data-i18n="contacts.wcHint">Отсканируйте в WeChat</span>
+            <button type="button" class="btn btn-outline btn-sm wechat-copy" data-copy="a_linshar" data-i18n="contacts.wcCopy">Скопировать ID</button>
+          </div>
+        </div>
+        <ul class="contact-extra">
+          <li class="si si-inst"><span data-i18n="contacts.igLabel">Instagram:</span> <a href="https://instagram.com/a_linshar" target="_blank" rel="noopener">@a_linshar</a></li>
+          <li class="si si-vk"><span data-i18n="contacts.vkLabel">VK:</span> <a href="https://vk.com/a_linshar" target="_blank" rel="noopener">@a_linshar</a></li>
+          <li><span data-i18n="contacts.emailLabel">Email:</span> <a href="mailto:artanisans@ya.ru">artanisans@ya.ru</a></li>
+          <li><span data-i18n="contacts.locLabel">Локация:</span> <span data-i18n="contacts.locValue">Аньхой, Китай</span></li>
+        </ul>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="https://t.me/a_linshar" target="_blank" rel="noopener" data-i18n="contacts.btn1">Написать в Telegram</a>
+          <a class="btn btn-outline" href="https://t.me/a_linshar" target="_blank" rel="noopener" data-i18n="contacts.btn2">Запросить подбор</a>
+          <a class="btn btn-outline" href="https://t.me/a_linshar" target="_blank" rel="noopener" data-i18n="contacts.btn3">Запросить прайс</a>
+          <a class="btn btn-outline" href="https://t.me/a_linshar" target="_blank" rel="noopener" data-i18n="contacts.btn4">Обсудить сотрудничество</a>
+        </div>
+      </div>
+      <div class="contacts-right">
+        <img src="media/contact_portrait.jpg" alt="Алина Шарипова, специалист по китайскому чаю" loading="lazy" class="ph portrait">
+        <form class="lead-form" action="https://t.me/a_linshar" onsubmit="return openTelegram(event)">
+          <input type="text" name="name" placeholder="Имя" autocomplete="name" data-i18n-ph="form.name">
+          <input type="text" name="place" placeholder="Город / страна" data-i18n-ph="form.place">
+          <input type="text" name="contact" placeholder="Контакт (Telegram / email)" data-i18n-ph="form.contact">
+          <select name="who" aria-label="Кто вы">
+            <option value="" data-i18n="form.whoDefault">Кто вы</option>
+            <option data-i18n="form.who1">Частный клиент</option><option data-i18n="form.who2">Магазин</option><option data-i18n="form.who3">Клуб</option>
+            <option data-i18n="form.who4">HoReCa</option><option data-i18n="form.who5">Медиа</option><option data-i18n="form.who6">Другое</option>
+          </select>
+          <textarea name="message" rows="3" placeholder="Что ищете, желаемый бюджет или объём" data-i18n-ph="form.message"></textarea>
+          <button type="submit" class="btn btn-primary tg-btn" data-i18n="form.submit">Отправить в Telegram</button>
+          <span class="form-note" data-i18n="form.note">Форма откроет чат в Telegram с вашим сообщением.</span>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <!-- печать-логотип: инлайн SVG (светлая/вывернутая версия для тёмного подвала) -->
+      <svg class="logo-svg footer-logo" viewBox="0 0 700 240" role="img" aria-label="AILIN TEA PRACTICE">
+        <rect x="48" y="58" width="124" height="124" rx="16" fill="none" stroke="#F4ECDD" stroke-width="3"/>
+        <text x="110" y="108" text-anchor="middle" class="cjk" font-size="46" fill="#F4ECDD">爱</text>
+        <text x="110" y="160" text-anchor="middle" class="cjk" font-size="46" fill="#F4ECDD">林</text>
+        <text x="439" y="116" text-anchor="middle" class="serif" font-size="80" letter-spacing="2" fill="#F4ECDD">Ailin</text>
+        <text x="444" y="156" text-anchor="middle" class="sans" font-size="19" letter-spacing="12" fill="#D7E5DB">TEA PRACTICE</text>
+      </svg>
+      <p class="footer-tag" data-i18n="footer.tag">Китайский чай с личным отбором в Китае</p>
+    </div>
+    <nav class="footer-menu" aria-label="Меню подвала">
+      <a href="#about" data-i18n="footer.mAbout">Обо мне</a>
+      <a href="#tea" data-i18n="footer.mTea">Чай</a>
+      <a href="#services" data-i18n="footer.mServices">Услуги</a>
+      <a href="#media" data-i18n="footer.mMedia">Медиа</a>
+      <a href="#contacts" data-i18n="footer.mContacts">Контакты</a>
+    </nav>
+    <div class="footer-links">
+      <a href="https://t.me/a_linshar" target="_blank" rel="noopener">Telegram</a>
+      <a class="si si-inst" href="https://instagram.com/a_linshar" target="_blank" rel="noopener">Instagram</a>
+      <a class="si si-vk" href="https://vk.com/a_linshar" target="_blank" rel="noopener">VK</a>
+      <a href="mailto:artanisans@ya.ru">Email</a>
+      <span class="si si-wc" data-i18n="footer.wechat">WeChat ID: a_linshar</span>
+    </div>
+  </div>
+  <div class="copyright">© AILIN TEA PRACTICE, 2026</div>
+</footer>
+
+<!-- sticky mobile contact bar (быстрые кнопки связи на телефоне) -->
+<div class="mobile-cta" role="navigation" aria-label="Быстрая связь">
+  <a class="btn btn-primary" href="https://t.me/a_linshar" target="_blank" rel="noopener" data-i18n="mcta.write">Написать в Telegram</a>
+  <a class="btn btn-outline" href="#contacts" data-i18n="mcta.select">Запросить подбор</a>
+</div>
+
+<!-- lightbox -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lb-close" id="lbClose" aria-label="Закрыть">×</button>
+  <img id="lbImg" src="" alt="">
+  <div class="lb-caption" id="lbCaption"></div>
+</div>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
